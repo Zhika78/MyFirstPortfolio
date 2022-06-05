@@ -18,8 +18,13 @@ body, html{
   bottom: 10px;
 }
 
-body {
+/* body {
   background-image: url('./ezgif.com-gif-maker.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+body {
+  background-color: hsl(240, 44%, 11%);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -31,22 +36,143 @@ body {
 
 #sun{
   position: fixed;
-  top: calc(50vh - 50px);
-  left: calc(50vw - 50px);
+  top: calc(50vh - 100px);
+  left: calc(50vw - 100px);
+  z-index: 4;
 }
  #earth{
   position: fixed;
-  top: calc(40vh - 50px);
+  top: calc(35vh - 50px);
   left: calc(60vw - 50px);
- 
+  z-index: 4;
  }
  #venus{
   position: fixed;
-  top: calc(30vh - 50px);
+  top: calc(60vh - 50px);
   left: calc(30vw - 50px);
+  z-index: 4;
  }
+
  #jupiter{
   position: fixed;
-  top: calc(70vh - 50px);
-  left: calc(70vw - 50px);
+  top: calc(85vh - 50px);
+  left: calc(50vw - 50px);
+  z-index: 4;
  }
+
+@keyframes star-blink{
+  0% {opacity: 0%;}
+  50% {opacity: 100%;}
+  100% {opacity: 0%;}
+}
+
+.star{
+  animation-name: star-blink;
+  position: fixed;
+  animation-iteration-count: infinite;
+}
+
+.star1{
+  animation-duration: 5s;
+  top: calc(50vh - 25px);
+  left: calc(30vw - 25px);
+}
+
+.star2{
+  animation-duration: 6s;
+  top: calc(20vh - 10px);
+  left: calc(33vw - 10px);
+}
+
+.star3{
+  animation-duration: 7s;
+  top: calc(90vh - 25px);
+  left: calc(40vw - 25px);
+}
+
+.star4{
+  animation-duration: 8s;
+  top: calc(10vh - 25px);
+  left: calc(85vw - 25px);
+}
+
+.star5{
+  animation-duration: 9s;
+  top: calc(80vh - 10px);
+  left: calc(5vw - 10px);
+}
+
+.star6{
+  animation-duration: 10s;
+  top: calc(65vh - 10px);
+  left: calc(45vw - 10px);
+}
+
+.star7{
+  animation-duration: 9s;
+  top: calc(5vh - 30px);
+  left: calc(50vw - 30px);
+}
+
+.star8{
+  animation-duration: 8s;
+  top: calc(40vh - 30px);
+  left: calc(0vw - 30px);
+}
+
+.star9{
+  animation-duration: 7s;
+  top: calc(10vh - 10px);
+  left: calc(5vw - 10px);
+}
+
+.star10{
+  animation-duration: 6s;
+  top: calc(85vh - 25px);
+  left: calc(85vw - 25px);
+}
+
+.star11{
+  animation-duration: 5s;
+  top: calc(45vh - 30px);
+  left: calc(95vw - 30px);
+}
+
+.oval1{
+  width: 400px;
+  height: 150px;
+  background: #0000;
+  border: dotted 5px whitesmoke;
+  border-radius: 50%;
+  position: fixed;
+  top: 40vh;
+  left: 35vw;
+  transform: rotate(-20deg);
+  z-index: 1;
+}
+
+.oval2{
+  width: 700px;
+  height: 350px;
+  background: #0000;
+  border: dotted 5px whitesmoke;
+  border-radius: 50%;
+  position: fixed;
+  top: 25vh;
+  left: 25vw;
+  transform: rotate(10deg);
+  z-index: 2;
+}
+
+.oval3{
+  width: 900px;
+  height: 450px;
+  background: #0000;
+  border: dotted 5px whitesmoke;
+  border-radius: 50%;
+  position: fixed;
+  top: 18vh;
+  left: 16vw;
+  transform: rotate(-10deg);
+  z-index: 3;
+}
