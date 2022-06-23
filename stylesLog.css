@@ -1,0 +1,179 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.header {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  position: fixed;
+  right: 10vw;
+  top: 5vh;
+}
+.footer {
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+}
+
+/* body {
+  background-image: url('./ezgif.com-gif-maker.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+body {
+  background-color: hsl(240, 44%, 11%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main{
+  position: fixed;
+  top: calc(10vh - 50px);
+  left: calc(5vw - 50px);
+}
+
+#sun{
+  position: fixed;
+  top: calc(40vh - 50px);
+  left: calc(65vw - 50px);
+  z-index: 4;
+}
+#earth{
+  position: fixed;
+  top: calc(32vh - 50px);
+  left: calc(75vw - 50px);
+  z-index: 4;
+}
+#venus{
+  position: fixed;
+  top: calc(51vh - 50px);
+  left: calc(54vw - 50px);
+  z-index: 4;
+}
+
+#jupiter{
+  position: fixed;
+  top: calc(75vh - 50px);
+  left: calc(71vw - 50px);
+  z-index: 4;
+}
+
+@keyframes star-blink{
+  0% {opacity: 0%;}
+  50% {opacity: 100%;}
+  100% {opacity: 0%;}
+}
+
+.star{
+  animation-name: star-blink;
+  position: fixed;
+  animation-iteration-count: infinite;
+}
+
+.star1{
+  animation-duration: 5s;
+  top: calc(50vh - 25px);
+  left: calc(30vw - 25px);
+}
+
+.star2{
+  animation-duration: 6s;
+  top: calc(20vh - 10px);
+  left: calc(33vw - 10px);
+}
+
+.star3{
+  animation-duration: 7s;
+  top: calc(90vh - 25px);
+  left: calc(40vw - 25px);
+}
+
+.star4{
+  animation-duration: 8s;
+  top: calc(10vh - 25px);
+  left: calc(85vw - 25px);
+}
+
+.star5{
+  animation-duration: 9s;
+  top: calc(80vh - 10px);
+  left: calc(5vw - 10px);
+}
+
+.star6{
+  animation-duration: 10s;
+  top: calc(65vh - 10px);
+  left: calc(45vw - 10px);
+}
+
+.star7{
+  animation-duration: 9s;
+  top: calc(5vh - 30px);
+  left: calc(50vw - 30px);
+}
+
+.star8{
+  animation-duration: 8s;
+  top: calc(40vh - 30px);
+  left: calc(0vw - 30px);
+}
+
+.star9{
+  animation-duration: 7s;
+  top: calc(10vh - 10px);
+  left: calc(5vw - 10px);
+}
+
+.star10{
+  animation-duration: 6s;
+  top: calc(85vh - 25px);
+  left: calc(85vw - 25px);
+}
+
+.star11{
+  animation-duration: 5s;
+  top: calc(45vh - 30px);
+  left: calc(95vw - 30px);
+}
+
+.oval1{
+  width: 275px;
+  height: 120px;
+  background: #0000;
+  border: dotted 5px whitesmoke;
+  border-radius: 50%;
+  position: fixed;
+  top: 34vh;
+  left: 56vw;
+  transform: rotate(-30deg);
+  z-index: 1;
+}
+
+.oval2{
+  width: 430px;
+  height: 270px;
+  background: #0000;
+  border: dotted 5px whitesmoke;
+  border-radius: 50%;
+  position: fixed;
+  top: 23vh;
+  left: 50vw;
+  transform: rotate(16deg);
+  z-index: 2;
+}
+
+.oval3{
+  width: 630px;
+  height: 390px;
+  background: #0000;
+  border: dotted 5px whitesmoke;
+  border-radius: 50%;
+  position: fixed;
+  top: 16vh;
+  left: 41vw;
+  transform: rotate(-25deg);
+  z-index: 3;
+}
+
