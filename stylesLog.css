@@ -35,29 +35,78 @@ body {
 }
 
 #sun{
-  position: fixed;
-  top: calc(40vh - 50px);
-  left: calc(65vw - 50px);
+  position: relative;
+  top: calc(50% - 75px);
+  left: calc(30% - 75px);
   z-index: 4;
 }
 #earth{
-  position: fixed;
-  top: calc(32vh - 50px);
-  left: calc(75vw - 50px);
+  position: inherit;
+  /* top: calc(32vh - 50px);
+  left: calc(75vw - 50px); */
   z-index: 4;
+  transform: rotate(+30deg)
 }
 #venus{
-  position: fixed;
-  top: calc(51vh - 50px);
-  left: calc(54vw - 50px);
+  position: inherit;
+  /* top: calc(51vh - 50px);
+  left: calc(54vw - 50px); */
   z-index: 4;
+  transform: rotate(-16deg)
 }
 
 #jupiter{
-  position: fixed;
-  top: calc(75vh - 50px);
-  left: calc(71vw - 50px);
+  position: inherit;
+  /* top: calc(75vh - 50px);
+  left: calc(71vw - 50px); */
   z-index: 4;
+  transform: rotate(+25deg)
+}
+
+.oval {
+  position: relative;
+  border: dotted 5px whitesmoke;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.oval1{
+  width: 22vw;
+  height: 18vh;
+  /* background: #0000; */
+  /* border: dotted 5px whitesmoke; */
+  /* border-radius: 50%; */
+  /* position: relative; */
+  top: 95%;
+  left: 7%;
+  transform: rotate(-30deg);
+  z-index: 1;
+}
+
+.oval2{
+  width: 22vw;
+  height: 18vh;
+  /* background: #0000; */
+  /* border: dotted 5px whitesmoke; */
+  /* border-radius: 50%;
+  position: relative; */
+  top: -10%;
+  left: -10%;
+  transform: rotate(16deg);
+  z-index: 2;
+}
+
+.oval3{
+  width: 50vw;
+  height: 35vh;
+  /* background: #0000;
+  border: dotted 5px whitesmoke; */
+  /* border-radius: 50%;
+  position: relative; */
+  top: -100%;
+  left: -10%;
+  transform: rotate(-25deg);
+  z-index: 3;
 }
 
 @keyframes star-blink{
@@ -138,42 +187,5 @@ body {
   left: calc(95vw - 30px);
 }
 
-.oval1{
-  width: 275px;
-  height: 120px;
-  background: #0000;
-  border: dotted 5px whitesmoke;
-  border-radius: 50%;
-  position: fixed;
-  top: 34vh;
-  left: 56vw;
-  transform: rotate(-30deg);
-  z-index: 1;
-}
 
-.oval2{
-  width: 430px;
-  height: 270px;
-  background: #0000;
-  border: dotted 5px whitesmoke;
-  border-radius: 50%;
-  position: fixed;
-  top: 23vh;
-  left: 50vw;
-  transform: rotate(16deg);
-  z-index: 2;
-}
-
-.oval3{
-  width: 630px;
-  height: 390px;
-  background: #0000;
-  border: dotted 5px whitesmoke;
-  border-radius: 50%;
-  position: fixed;
-  top: 16vh;
-  left: 41vw;
-  transform: rotate(-25deg);
-  z-index: 3;
-}
 
