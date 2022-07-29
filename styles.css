@@ -1,7 +1,10 @@
-body, html{
+/* body, html{
   margin: 0;
   padding: 0;
   height: 100%;
+}
+header {
+  position: flex;
 }
 .header {
   color: rgb(255, 255, 255);
@@ -16,49 +19,144 @@ body, html{
   position: fixed;
   left: 10px;
   bottom: 10px;
-}
+} */
 
 /* body {
   background-image: url('./ezgif.com-gif-maker.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 } */
-body {
+/* body {
   background-color: hsl(240, 44%, 11%);
   background-repeat: no-repeat;
   background-size: cover;
+  display:flex;
 }
 .main{
   position: fixed;
   top: calc(10vh - 50px);
   left: calc(5vw - 50px);
-}
+} */
 
+/* .planet{
+  position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%) rotate(var(--r, 0deg)) translateX(var(--d, 0px)); */
+/* } */
+
+/* 
 #sun{
   position: fixed;
-  top: calc(50vh - 100px);
-  left: calc(50vw - 100px);
+  top: calc(50vh - 85px);
+  left: calc(50vw - 120px);
   z-index: 4;
+  width: 170px;
+  height: 170px;
 }
- #earth{
-  position: fixed;
-  top: calc(35vh - 50px);
-  left: calc(60vw - 50px);
-  z-index: 4;
- }
- #venus{
-  position: fixed;
-  top: calc(60vh - 50px);
-  left: calc(30vw - 50px);
-  z-index: 4;
- }
 
- #jupiter{
+@media screen and (max-width: 480px) {
+  #sun{
+    width: 80px;
+    height: 80px;
+    top: calc(50vh - 40px);
+    left: calc(50vw - 40px);
+  }
+} 
+
+#earth{  */
+  /* position: fixed; */
+  /* top: -4vh; */
+  /* left: -1vw; */
+  /* z-index: 10;
+  width: 95x;
+  height: 95px;
+} 
+
+
+@media screen and (max-width: 480px) {
+  #earth{
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+#venus{
   position: fixed;
-  top: calc(85vh - 50px);
-  left: calc(50vw - 50px);
+  top: 14vh;
+  left: -3vw;
   z-index: 4;
- }
+  width: 95x;
+  height: 95px;
+}
+
+@media screen and (max-width: 480px) {
+  #venus{
+    width: 35px;
+    height: 35px;
+  }
+}
+
+#jupiter{
+  position: absolute;
+  top: 46vh;
+  left: 20vw;
+  z-index: 4;
+  width: 95x;
+  height: 95px;
+}
+
+@media screen and (max-width: 480px) {
+  #jupiter{
+    width: 35px;
+    height: 35px;
+  }
+} */
+
+
+
+/*
+.oval{
+  position: relative;
+  width: var(--d, 100px);
+  height: var(--d, 100px);
+  border-radius: 50%;
+  border: dotted 5px whitesmoke;
+  margin: auto;
+  padding: 10px;
+}
+
+#oval1{ */
+  /* width: 27vw;
+  height: 27vh; */
+  /* border-radius: 50%;
+  position: fixed;*/
+  /* top: 40vh;
+  left: 33vw;  */
+  /* z-index: 10;
+} */
+
+/* #oval2{ */
+  /* width: 42vw;
+  height: 37vh; */
+  /* border-radius: 50%;
+  position: fixed;*/
+  /* top: 34vh;
+  left: 27vw; 
+  z-index: 2;
+}
+
+#oval3{ */
+  /* width: 60vw;
+  height: 55vh; */
+  /* border-radius: 50%;
+  position: fixed;*/
+  /* top: 26vh;
+  left: 18vw;
+  z-index: 1;
+}
+
 
 @keyframes star-blink{
   0% {opacity: 0%;}
@@ -137,42 +235,42 @@ body {
   top: calc(45vh - 30px);
   left: calc(95vw - 30px);
 }
+ */
 
-.oval1{
-  width: 400px;
-  height: 150px;
-  background: #0000;
-  border: dotted 5px whitesmoke;
-  border-radius: 50%;
-  position: fixed;
-  top: 40vh;
-  left: 35vw;
-  transform: rotate(-20deg);
-  z-index: 1;
+.galaxy{
+  margin: auto;
+  position: relative;
+  align-items: center;
 }
 
-.oval2{
-  width: 700px;
-  height: 350px;
-  background: #0000;
-  border: dotted 5px whitesmoke;
-  border-radius: 50%;
-  position: fixed;
-  top: 25vh;
-  left: 25vw;
-  transform: rotate(10deg);
-  z-index: 2;
+.orbit{
+  width: var(--d, 100px);
+  height: var(--d, 100px);
+  border-radius:50%;
+  border: 5px dotted black;
+  margin:auto;
+  position:fixed;
+  top: calc( 50% - var(--d, 100px) / 2 );
+  left: calc( 50% - var(--d, 100px) / 2 );
+  transform: rotate(var(--r, 0deg));
 }
 
-.oval3{
-  width: 900px;
-  height: 450px;
-  background: #0000;
-  border: dotted 5px whitesmoke;
-  border-radius: 50%;
-  position: fixed;
-  top: 18vh;
-  left: 16vw;
-  transform: rotate(-10deg);
-  z-index: 3;
+.orbit a {
+  position:absolute;
+  border-radius:inherit;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) translateX(var(--d,0px));
+}
+
+.planet-img {
+  height: var(--wh, 95px);
+  width: var(--wh, 95px);
+  transform: rotate(var(--r, -0deg));
+}
+
+body {
+  margin:0;
+  height:100vh;
+  display:flex;
 }
