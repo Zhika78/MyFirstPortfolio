@@ -1,4 +1,4 @@
-/* body, html{
+body, html{
   margin: 0;
   padding: 0;
   height: 100%;
@@ -19,24 +19,25 @@ header {
   position: fixed;
   left: 10px;
   bottom: 10px;
-} */
+} 
 
 /* body {
   background-image: url('./ezgif.com-gif-maker.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 } */
-/* body {
+
+body {
   background-color: hsl(240, 44%, 11%);
   background-repeat: no-repeat;
   background-size: cover;
-  display:flex;
+  display:flex; */
 }
 .main{
   position: fixed;
   top: calc(10vh - 50px);
   left: calc(5vw - 50px);
-} */
+} 
 
 /* .planet{
   position: absolute; */
@@ -156,7 +157,7 @@ header {
   left: 18vw;
   z-index: 1;
 }
-
+*/
 
 @keyframes star-blink{
   0% {opacity: 0%;}
@@ -235,7 +236,7 @@ header {
   top: calc(45vh - 30px);
   left: calc(95vw - 30px);
 }
- */
+
 
 .galaxy{
   margin: auto;
@@ -247,7 +248,7 @@ header {
   width: var(--d, 100px);
   height: var(--d, 100px);
   border-radius:50%;
-  border: 5px dotted black;
+  border: 5px dotted whitesmoke;
   margin:auto;
   position:fixed;
   top: calc( 50% - var(--d, 100px) / 2 );
