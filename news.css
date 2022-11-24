@@ -1,0 +1,107 @@
+
+.PT { 
+	color: rgb(0, 0, 0);
+	position: absolute;
+	left: 80px;
+	top: 100px;
+	font-family: Times New Roman;
+	text-align: center;
+	font-size: 40px;
+	letter-spacing: 0;
+}
+.im{ 
+	width:500px;
+	height:500px;
+	position:absolute;
+	left:230px;
+	top:150px;
+	background-image:url(./images/im1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.Title { 
+	color: rgba(0, 0, 0, 1);
+	position: absolute;
+	left: 90px;
+	top: 700px;
+	font-family: Times New Roman bold;
+	text-align: left;
+	font-size: 88px;
+	letter-spacing: 0;
+}
+
+.content { 
+	height: 100px;
+	width: 800px;
+	color: rgba(0, 0, 0, 1);
+	position: absolute;
+	left: 90px;
+	top: 830px;
+	font-family: Times New Roman;
+	text-align: justify;
+	font-size: 38px;
+	letter-spacing: 0;
+}
+.footer {
+	width: 960px;
+	height: 49px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 1;
+	position: absolute;
+	top: 1382px;
+	left: 0px;
+	overflow: hidden;
+  }
+  
+  .AU {
+	width: 171px;
+	color: rgba(0,0,0,1);
+	position: absolute;
+	top: 9px;
+	left: 60px;
+	font-family: Montserrat Light;
+	font-weight: Regular;
+	font-size: 20px;
+	opacity: 1;
+	text-align: left;
+  }
+  .FU {
+	width: 171px;
+	color: rgba(0,0,0,1);
+	position: absolute;
+	top: 9px;
+	left: 540px;
+	font-family: Montserrat Light;
+	font-weight: Regular;
+	font-size: 20px;
+	opacity: 1;
+	text-align: left;
+  }
+
+  a:link {
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:visited {
+	color: rgb(0, 0, 0);
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: rgb(102, 4, 97);
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:active {
+	color: rgb(0, 225, 255);
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
